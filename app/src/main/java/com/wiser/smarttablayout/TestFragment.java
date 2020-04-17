@@ -13,14 +13,6 @@ import androidx.fragment.app.Fragment;
 public class TestFragment extends Fragment {
     public static final String PASS = "PASS";
 
-    public static TestFragment getInstance(String test){
-        TestFragment fragment = new TestFragment();
-        Bundle bundle = new Bundle();
-        bundle.putString(PASS,test);
-        fragment.setArguments(bundle);
-        return fragment;
-    }
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
