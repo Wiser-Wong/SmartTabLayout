@@ -5,6 +5,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:onClick="updateTitle"
+        android:text="动态更新title"/>
+
     <com.wiser.tab.smart.SmartTabLayout
         android:id="@+id/smart_tab"
         android:layout_width="match_parent"

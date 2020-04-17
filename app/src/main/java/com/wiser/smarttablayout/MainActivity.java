@@ -3,6 +3,8 @@ package com.wiser.smarttablayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import com.wiser.tab.SmartPageView;
 import com.wiser.tab.SmartTabInfo;
@@ -27,5 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
         smartPageView.setPage(getSupportFragmentManager(),new SmartTabInfo("测试 11231231", TestFragment.class, bundle1), new SmartTabInfo("测试2", TestFragment.class, bundle2), new SmartTabInfo("测试3", TestFragment.class, bundle3));
 		smartPageView.setOffscreenPageLimit(3);
+
+
+    }
+
+    public void updateTitle(View view) {
+        TextView textView = smartPageView.smartTabLayout().getTabAt(2).findViewById(R.id.custom_text);
+        textView.setText("开心吧".toUpperCase());
     }
 }
