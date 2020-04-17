@@ -1,0 +1,3 @@
+rootProject.name='SmartTabLayout'
+include ':app'
+include ':tab'
